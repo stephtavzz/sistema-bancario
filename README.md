@@ -9,18 +9,18 @@ Este projeto foi desenvolvido como parte de um desafio prático da **DIO (Digita
 ## ⚙️ Funcionalidades Implementadas
 
 1. **Depósito**
-   - Aceita apenas valores positivos.
+   - Aceita apenas valores positivos;
    - Registra o valor na conta e no extrato.
 
 2. **Saque**
-   - Limite de até **3 saques por dia**.
-   - Cada saque não pode ultrapassar **R$ 500,00**.
-   - Verifica se o saldo é suficiente antes de permitir a operação.
+   - Limite de até **3 saques por dia**;
+   - Cada saque não pode ultrapassar **R$ 500,00**;
+   - Verifica se o saldo é suficiente antes de permitir a operação;
    - Registra o valor sacado no extrato.
 
 3. **Extrato**
-   - Exibe todas as movimentações (depósitos e saques) com formatação de moeda.
-   - Mostra o saldo atual da conta.
+   - Exibe todas as movimentações (depósitos e saques) com formatação de moeda;
+   - Mostra o saldo atual da conta;
    - Caso não haja movimentações, informa ao usuário.
 
 ## 🖥️ Exemplo de Uso
@@ -36,10 +36,10 @@ As operações são realizadas conforme a escolha do usuário, com mensagens cla
 
 ## ✅ Regras de Negócio
 
-- Apenas valores positivos são aceitos para depósito e saque.
-- O limite de saque é de R$ 500,00 por operação.
-- O número máximo de saques diários é 3.
-- O sistema não possui autenticação ou múltiplos usuários (versão simplificada).
+- Apenas valores positivos são aceitos para depósito e saque;
+- O limite de saque é de R$ 500,00 por operação;
+- O número máximo de saques diários é 3;
+- O sistema não possui autenticação ou múltiplos usuários (versão simplificada);
 - Todos os registros de movimentações são armazenados em memória.
 
 ## 🛠️ Tecnologias Utilizadas
