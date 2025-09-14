@@ -1,79 +1,68 @@
-# 🚗 Sistema de Estacionamento em C#
 
-![C#](https://img.shields.io/badge/C%23-10.0%2B-purple)
-![.NET](https://img.shields.io/badge/.NET-9.0-blue)
+# 🏦 Sistema Bancário em Python
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 
 ## 📌 Sobre o Projeto
 
-Este projeto foi desenvolvido como parte de um desafio prático da **DIO (Digital Innovation One)** no módulo de **Fundamentos do .NET**.  
-O objetivo é implementar um **sistema de estacionamento** que permita gerenciar veículos, incluindo operações de **cadastro**, **remoção** e **listagem**.
+Este projeto foi desenvolvido como parte de um desafio prático da **DIO (Digital Innovation One)** com o objetivo de implementar um **sistema bancário básico** utilizando a linguagem Python. O sistema simula operações comuns de uma conta bancária, como **depósitos**, **saques** e **emissão de extrato**, respeitando algumas regras de negócio predefinidas.
 
 ## ⚙️ Funcionalidades Implementadas
 
-1. **Cadastrar veículo**
-   - O usuário informa a placa do veículo;
-   - O sistema armazena a placa em uma lista.
+1. **Depósito**
+   - Aceita apenas valores positivos.
+   - Registra o valor na conta e no extrato.
 
-2. **Remover veículo**
-   - O usuário informa a placa do veículo;
-   - Caso o veículo esteja estacionado, o sistema solicita a quantidade de horas e calcula o valor total:
-     ```
-     valorTotal = precoInicial + (precoPorHora * horas)
-     ```
-   - O veículo é removido da lista e o valor é exibido.
+2. **Saque**
+   - Limite de até **3 saques por dia**.
+   - Cada saque não pode ultrapassar **R$ 500,00**.
+   - Verifica se o saldo é suficiente antes de permitir a operação.
+   - Registra o valor sacado no extrato.
 
-3. **Listar veículos**
-   - Exibe todas as placas atualmente cadastradas;
-   - Caso não haja veículos, informa ao usuário.
-
-4. **Menu interativo**
-   - O usuário pode escolher entre:
-     - Cadastrar veículo
-     - Remover veículo
-     - Listar veículos
-     - Encerrar o programa
+3. **Extrato**
+   - Exibe todas as movimentações (depósitos e saques) com formatação de moeda.
+   - Mostra o saldo atual da conta.
+   - Caso não haja movimentações, informa ao usuário.
 
 ## 🖥️ Exemplo de Uso
 
-Ao executar o programa, o usuário interage com o seguinte menu:
-
-Digite a sua opção:
-1 - Cadastrar veículo
-2 - Remover veículo
-3 - Listar veículos
-4 - Encerrar
+Ao executar o script, o usuário verá um menu interativo:
+   - [d] Depositar
+   - [s] Sacar
+   - [e] Extrato
+   - [q] Sair
 
 
-As operações são realizadas conforme a escolha do usuário, com mensagens claras de sucesso ou falha.
+As operações são realizadas conforme a escolha do usuário, com mensagens claras de sucesso ou falha conforme as regras do sistema.
 
 ## ✅ Regras de Negócio
 
-- O sistema armazena apenas a **placa do veículo**;
-- Para remoção, é necessário informar a quantidade de horas estacionado;
-- O cálculo do valor é feito a partir do preço inicial + preço por hora;
-- Caso a placa não esteja cadastrada, o sistema exibe uma mensagem de erro.
+- Apenas valores positivos são aceitos para depósito e saque.
+- O limite de saque é de R$ 500,00 por operação.
+- O número máximo de saques diários é 3.
+- O sistema não possui autenticação ou múltiplos usuários (versão simplificada).
+- Todos os registros de movimentações são armazenados em memória.
 
 ## 🛠️ Tecnologias Utilizadas
 
-- C# 10+
-- .NET 6.0
-- **Visual Studio Code** ou **Visual Studio** como ambiente de desenvolvimento
+- Python 3.10+
+- **Visual Studio Code (VS Code)** como ambiente de desenvolvimento
 
 ## 📂 Como Executar o Projeto
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/sistema-estacionamento-csharp.git
+git clone https://github.com/seu-usuario/sistema-bancario-python.git
 ```
 
 2. Navegue até o diretório do projeto:
 ```bash
-cd sistema-estacionamento-csharp
+cd sistema-bancario-python
 ```
 
-3. Execute o projeto:
+3. Execute o script:
 ```bash
-dotnet run
+python sistema_bancario.py
 ```
 ## 👩‍💻 Autora
 
@@ -82,4 +71,4 @@ dotnet run
 💻 [GitHub](https://github.com/stephtavzz)  
 
 
-Este projeto foi desenvolvido para fins educacionais, como parte de um desafio da plataforma DIO, visando a prática de sintaxe básica com C# e .NET.
+Este projeto foi desenvolvido para fins educacionais, como parte de um desafio da plataforma DIO, visando a prática de conceitos básicos de programação com Python.
