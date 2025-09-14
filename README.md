@@ -1,7 +1,7 @@
 # 🚗 Sistema de Estacionamento em C#
 
 ![C#](https://img.shields.io/badge/C%23-10.0%2B-purple)
-![.NET](https://img.shields.io/badge/.NET-6.0-blue)
+![.NET](https://img.shields.io/badge/.NET-9.0-blue)
 
 ## 📌 Sobre o Projeto
 
